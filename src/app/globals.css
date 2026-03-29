@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap');
+
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--cream);
+    color: var(--graphite);
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-cormorant), Georgia, serif;
+    font-weight: 600;
+  }
+
+  ::selection {
+    background-color: #2D596430;
+    color: var(--teal-dark);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  /* Botão primário */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 
+           bg-teal text-cream font-sans font-medium tracking-wide
+           text-sm uppercase transition-all duration-500
+           hover:bg-teal-dark hover:tracking-wider
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2;
+  }
+
+  /* Botão secundário (outline) */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4
+           border border-graphite text-graphite font-sans font-medium tracking-wide
+           text-sm uppercase transition-all duration-500
+           hover:bg-graphite hover:text-cream
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-graphite focus-visible:ring-offset-2;
+  }
+
+  /* Botão ghost (teal outline) */
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4
+           border border-teal text-teal font-sans font-medium tracking-wide
+           text-sm uppercase transition-all duration-500
+           hover:bg-teal hover:text-cream
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2;
+  }
+
+  /* Container padrão */
+  .container-custom {
+    @apply mx-auto w-full max-w-content px-6 md:px-12 lg:px-16;
+  }
+
+  /* Seção padrão */
+  .section {
+    @apply py-section;
+  }
+
+  /* Seção menor */
+  .section-sm {
+    @apply py-section-sm;
+  }
+
+  /* Linha decorativa dourada */
+  .gold-line {
+    @apply block w-12 h-px bg-gold my-6;
+  }
+
+  /* Eyebrow label */
+  .eyebrow {
+    @apply text-caption text-gold font-sans uppercase tracking-widest font-medium;
+  }
+
+  /* Quote decorativa */
+  .quote-mark {
+    font-family: var(--font-cormorant), Georgia, serif;
+    font-size: 6rem;
+    line-height: 0.5;
+    color: var(--gold-light);
+    opacity: 0.6;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Tag de tema */
+  .theme-tag {
+    @apply inline-flex items-center gap-2 px-4 py-2
+           border border-sand text-graphite-light
+           font-sans text-sm transition-all duration-400
+           hover:border-teal hover:text-teal;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Animações de entrada com delay customizável */
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-600 { animation-delay: 600ms; }
+
+  /* Opacity inicial para animações */
+  .opacity-start { opacity: 0; }
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--linen);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--sand);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--graphite-light);
+}
+
+/* Tipografia de leitura (página de trecho) */
+.reading-text {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  line-height: 1.85;
+  color: var(--graphite);
+  font-weight: 400;
+}
+
+.reading-text p {
+  margin-bottom: 1.75rem;
+  text-align: justify;
+  hanging-punctuation: first;
+}
+
+.reading-text p:first-child::first-letter {
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 0.75;
+  float: left;
+  margin: 0.1em 0.1em 0 0;
+  color: var(--teal);
+}
