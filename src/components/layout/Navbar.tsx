@@ -33,13 +33,13 @@ export function Navbar() {
       >
         <div className="container-custom">
           <div className="flex items-center justify-between h-16 md:h-20">
-            {/* Logo / Nome do livro */}
+            {/* Logo / Nome do autor (plataforma) */}
             <Link href="/" className="flex flex-col leading-none group" aria-label="Página inicial">
               <span className="font-serif text-lg md:text-xl text-graphite tracking-tight group-hover:text-teal transition-colors duration-400">
-                Nos Labirintos do Eu
+                Marco Aurélio Monteiro
               </span>
               <span className="font-sans text-[10px] uppercase tracking-[0.15em] text-gold mt-0.5">
-                Marco Aurélio Monteiro
+                Pesquisador · Autor
               </span>
             </Link>
 
@@ -65,7 +65,7 @@ export function Navbar() {
                 id="nav-buy-cta"
                 className="btn-primary !py-2.5 !px-6 !text-xs ml-4"
               >
-                Ver disponibilidade
+                Comprar o livro
               </Link>
             </nav>
 
@@ -135,7 +135,7 @@ export function Navbar() {
                   className="btn-primary"
                   id="mobile-buy-cta"
                 >
-                  Ver disponibilidade
+                  Comprar o livro
                 </Link>
               </motion.div>
             </nav>

@@ -112,6 +112,28 @@ export function Footer() {
                     Lattes
                   </a>
                 )}
+                {socialLinks.orcid && socialLinks.orcid !== '#' && (
+                  <a
+                    href={socialLinks.orcid}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="ORCID"
+                    className="font-sans text-body text-cream/60 hover:text-gold transition-colors duration-300"
+                  >
+                    ORCID
+                  </a>
+                )}
+                {socialLinks.scholar && socialLinks.scholar !== '#' && (
+                  <a
+                    href={socialLinks.scholar}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Google Acadêmico"
+                    className="font-sans text-body text-cream/60 hover:text-gold transition-colors duration-300"
+                  >
+                    Scholar
+                  </a>
+                )}
               </div>
             </div>
           </div>

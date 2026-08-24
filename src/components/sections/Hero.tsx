@@ -41,7 +41,7 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <span className="block w-8 h-px bg-gold" aria-hidden="true" />
-              <span className="eyebrow">{book.authorShort}</span>
+              <span className="eyebrow">Novo livro · {book.authorShort}</span>
             </motion.div>
 
             {/* Título */}
@@ -96,7 +96,7 @@ export function Hero() {
                 size="lg"
                 id="hero-buy-cta"
               >
-                Ver disponibilidade
+                Comprar o livro
               </Button>
               <Button
                 href="/leia-um-trecho"
@@ -107,6 +107,16 @@ export function Hero() {
                 Leia um trecho
               </Button>
             </motion.div>
+
+            {/* Nota de disponibilidade */}
+            <motion.p
+              className="mt-5 font-sans text-caption text-graphite-light"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.9, delay: 1 }}
+            >
+              {book.format} · {book.price} — {book.priceNote}
+            </motion.p>
 
             {/* Badge de autoridade */}
             <motion.div

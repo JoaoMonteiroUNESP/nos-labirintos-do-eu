@@ -88,16 +88,20 @@ export const author = {
 Essa vivência espiritual não é exterior à sua obra — ela é o coração dela. É o que transforma a escrita acadêmica em escuta, e o rigor intelectual em compaixão.`,
   },
 
-  // Redes sociais (edite com os links reais)
+  // Redes sociais e perfis acadêmicos
   social: {
-    instagram: 'https://instagram.com/prof.marcoaurelio',      // ← URL real
-    lattes: '#',         // ← URL do currículo Lattes
-    linkedIn: '#',       // ← URL LinkedIn
-    email: 'marco.monteiro@unesp.br',  // ← E-mail real
+    instagram: 'https://instagram.com/prof.marcoaurelio',
+    youtube: 'https://www.youtube.com/playlist?list=PLsBgJPZvzB9CXbtb4BjbQzyMbqSEZKw8g',
+    lattes: 'http://lattes.cnpq.br/0143498612781228',
+    orcid: 'https://orcid.org/0000-0002-4426-1638',
+    scholar: 'https://scholar.google.com/citations?user=MoU1HagAAAAJ&hl=pt-BR',
+    scielo: 'https://search.scielo.org/?lang=pt&q=au:MONTEIRO,+MARCO+AURELIO+ALVARENGA',
+    linkedIn: '#',       // ← URL LinkedIn (se houver)
+    email: 'marco.monteiro@unesp.br',  // ← Confirme o e-mail real
   },
 
   // Foto e vídeo
   photo: '/images/foto-autor.png',       // ← Substitua pela foto real
-  videoUrl: '',                             // ← URL do YouTube/Vimeo
+  videoUrl: 'https://www.youtube.com/playlist?list=PLsBgJPZvzB9CXbtb4BjbQzyMbqSEZKw8g',
   videoThumbnail: '/images/video-thumb.jpg', // ← Thumbnail do vídeo
 }

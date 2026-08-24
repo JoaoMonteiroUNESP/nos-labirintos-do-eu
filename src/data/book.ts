@@ -8,24 +8,58 @@ export const book = {
   subtitle: 'Uma jornada para superar as dores do caos interior',
   author: 'Prof. Marco Aurélio Alvarenga Monteiro',
   authorShort: 'Marco Aurélio Monteiro',
-  publishYear: 2024,
+  publishYear: 2026,
+  publishDate: '8 de maio de 2026',
 
   // Sinopse curta (para cards, hero, SEO)
   synopsisShort:
-    'Um livro que não oferece fórmulas, mas companhia. Obra dedicada à travessia emocional — disponível em formato eBook.',
+    'Uma bússola para atravessar as complexidades da mente e da alma — unindo a sensibilidade da espiritualidade universalista aos fundamentos da psicologia profunda.',
+
+  // Pergunta de abertura (da sinopse oficial)
+  hook:
+    'Você já se sentiu perdido dentro de si mesmo, como se as emoções fossem paredes intransponíveis?',
 
   // Sinopse completa (página O Livro)
   synopsis: `
     Há momentos em que a vida nos coloca diante de nós mesmos de um jeito que não conseguimos desviar o olhar. A ansiedade, a angústia, as dores que não têm nome fácil — tudo isso faz parte de uma travessia que é profundamente humana.
 
-    "Nos Labirintos do Eu" nasce desse encontro: entre a experiência de quem olhou para dentro com coragem e a necessidade de oferecer ao leitor não uma saída rápida, mas uma companhia honesta.
+    Em "Nos Labirintos do Eu", Marco Aurélio Alvarenga Monteiro propõe uma bússola para quem deseja atravessar as complexidades da mente e da alma. Combinando a sensibilidade da espiritualidade universalista com os fundamentos da psicologia profunda, a obra oferece um olhar humano e compassivo sobre as dores e os desafios da existência.
 
-    Esta obra não é um manual clínico. Não é um livro de autoajuda com promessas instantâneas. É um convite à reconexão — consigo mesmo, com o que há de mais essencial na experiência de ser humano.
-
-    Com um olhar que transita entre a sensibilidade, a espiritualidade e a reflexão filosófica, o autor nos conduz por temas como a dor emocional, o caos interior, a autocompaixão, os relacionamentos, o sentido da dor e a reconstrução de quem somos após as tempestades da vida.
+    Esta obra não é um manual clínico. Não é um livro de autoajuda com promessas instantâneas. Através de parábolas contemporâneas e uma linguagem acolhedora, o leitor é conduzido a entender que a felicidade é uma questão de ponto de vista — e que a saída do labirinto sempre começa pelo autodescobrimento.
 
     Um livro para ser lido com calma. Para sublinhar. Para voltar. Para presentear alguém que você sabe que precisa de acolhimento.
   `.trim(),
+
+  // Pilares da obra (extraídos da sinopse oficial)
+  pillars: [
+    {
+      title: 'O Despertar da Vontade',
+      description:
+        'Como encontrar energia para enfrentar as dificuldades e resistir aos impulsos imediatos.',
+    },
+    {
+      title: 'A Ciência do Sentir',
+      description:
+        'Uma reflexão profunda sobre a diferença entre o apego e o amor, e como lidar com a dor da saudade e do luto.',
+    },
+    {
+      title: 'O Poder das Escolhas',
+      description:
+        'O uso do livre-arbítrio como ferramenta de transformação para deixar de repetir padrões negativos.',
+    },
+    {
+      title: 'Saúde Mental e Fé',
+      description:
+        'Uma abordagem equilibrada sobre ansiedade e depressão, unindo o cuidado emocional ao fortalecimento espiritual.',
+    },
+  ],
+
+  // Público-leitor (da sinopse oficial)
+  readership: {
+    intro: 'Ideal para leitores de',
+    authors: ['Eckhart Tolle', 'Brené Brown', 'Joanna de Ângelis', 'Viktor Frankl'],
+    outro: 'e de todos que buscam uma espiritualidade livre, prática e transformadora.',
+  },
 
   // Principais temas da obra
   themes: [
@@ -51,6 +85,11 @@ export const book = {
         'Sem fórmulas mágicas. Sem promessas de 7 passos. Uma voz autoral honesta que acompanha, não prescreve.',
     },
     {
+      title: 'Ciência e sensibilidade',
+      description:
+        'Um pesquisador que estuda emoção, cognição e neurociência aplica esse olhar à travessia mais íntima: a de si mesmo.',
+    },
+    {
       title: 'Olhar espiritual e humano',
       description:
         'Uma perspectiva que integra a dimensão espiritual da experiência humana sem dogmatismo ou superficialidade.',
@@ -59,11 +98,6 @@ export const book = {
       title: 'Escrito para durar',
       description:
         'Uma obra para sublinhar e reler. Não um conteúdo de rápido consumo, mas uma presença que permanece.',
-    },
-    {
-      title: 'Voz de quem viveu',
-      description:
-        'Escrito por alguém com décadas de caminhada — acadêmica, espiritual e humana — que se traduz em autenticidade.',
     },
   ],
 
@@ -94,24 +128,32 @@ export const book = {
     attribution: 'Marco Aurélio Alvarenga Monteiro',
   },
 
-  // Links de compra (edite para colocar os links reais)
+  // Links de compra
   purchaseLinks: [
     {
-      label: 'Comprar eBook (Em breve)',
-      url: '#',  // ← Substitua pela URL real quando disponível
+      label: 'Comprar na Amazon',
+      url: 'https://www.amazon.com.br/Nos-Labirintos-Eu-jornada-interior-ebook/dp/B0H12YBKKC',
       primary: true,
+    },
+    {
+      label: 'Ler grátis no Kindle Unlimited',
+      url: 'https://www.amazon.com.br/Nos-Labirintos-Eu-jornada-interior-ebook/dp/B0H12YBKKC',
+      primary: false,
     },
   ],
 
-  // Preço (opcional, pode deixar vazio)
-  price: '',
+  // Preço
+  price: 'R$ 19,63',
+  priceNote: 'eBook Kindle · grátis no Kindle Unlimited',
 
-  // ISBN (opcional)
-  isbn: '',
+  // ISBN
+  isbn: '978-8572148795',
 
   // Capa do livro
   cover: '/images/capa-livro.jpg',
 
-  // Detalhes técnicos
-  pages: 408,
+  // Formato e detalhes técnicos
+  format: 'eBook Kindle',
+  language: 'Português',
+  pages: 350,
 }

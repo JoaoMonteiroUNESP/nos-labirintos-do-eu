@@ -4,44 +4,58 @@
 // =============================================================================
 
 export const siteConfig = {
-  siteName: 'Nos Labirintos do Eu',
-  siteUrl: 'https://noslabirintasdoeu.com.br', // ← Atualize com o domínio real
+  siteName: 'Marco Aurélio Alvarenga Monteiro',
+  siteTagline: 'Nos Labirintos do Eu',
+  siteUrl: 'https://noslabirintosdoeu.com.br', // ← Atualize com o domínio real
   siteDescription:
-    'Uma jornada para superar as dores do caos interior. Livro do Prof. Marco Aurélio Alvarenga Monteiro — obra de reflexão, espiritualidade e reconexão com o essencial.',
+    'Plataforma do Prof. Marco Aurélio Alvarenga Monteiro — pesquisador da UNESP e autor de "Nos Labirintos do Eu". Ciência, educação, neurociência das emoções e a travessia do autoconhecimento.',
   ogImage: '/og-image.jpg',
 }
 
+// Navegação principal — estruturada como plataforma do autor
 export const navLinks = [
   { label: 'O Livro', href: '/o-livro' },
-  { label: 'Sobre o Autor', href: '/sobre-o-autor' },
+  { label: 'O Autor', href: '/sobre-o-autor' },
+  { label: 'Na Mídia', href: '/midia' },
   { label: 'Leia um Trecho', href: '/leia-um-trecho' },
   { label: 'Contato', href: '/contato' },
 ]
 
+// Links de compra reais
 export const purchaseLinks = {
-  amazon: '#',           // ← URL Amazon real
-  shopee: '#',           // ← URL Shopee real (se houver)
-  site: '#',             // ← URL de venda direta (se houver)
-  others: '#',           // ← Outras livrarias
+  amazon:
+    'https://www.amazon.com.br/Nos-Labirintos-Eu-jornada-interior-ebook/dp/B0H12YBKKC',
+  kindleUnlimited:
+    'https://www.amazon.com.br/Nos-Labirintos-Eu-jornada-interior-ebook/dp/B0H12YBKKC',
+  shopee: '#',
+  site: '#',
+  others: '#',
 }
 
+// Redes sociais e perfis acadêmicos
 export const socialLinks = {
-  instagram: 'https://instagram.com/prof.marcoaurelio',        // ← Perfil Instagram real
-  facebook: '#',         // ← Perfil Facebook real
-  youtube: '#',          // ← Canal YouTube (se houver)
-  lattes: '#',           // ← Currículo Lattes
-  linkedin: '#',         // ← LinkedIn real
+  instagram: 'https://instagram.com/prof.marcoaurelio',
+  facebook: '#',
+  youtube: 'https://www.youtube.com/playlist?list=PLsBgJPZvzB9CXbtb4BjbQzyMbqSEZKw8g',
+  lattes: 'http://lattes.cnpq.br/0143498612781228',
+  orcid: 'https://orcid.org/0000-0002-4426-1638',
+  scholar: 'https://scholar.google.com/citations?user=MoU1HagAAAAJ&hl=pt-BR',
+  scielo: 'https://search.scielo.org/?lang=pt&q=au:MONTEIRO,+MARCO+AURELIO+ALVARENGA',
+  linkedin: '#',
 }
 
 export const contactInfo = {
-  email: 'marco.monteiro@unesp.br',  // ← E-mail real
-  pressEmail: 'marco.monteiro@unesp.br',  // ← E-mail para imprensa
-  lecturesEmail: 'marco.monteiro@unesp.br',  // ← Para convites de palestras
+  email: 'marco.monteiro@unesp.br', // ← Confirme o e-mail real
+  pressEmail: 'marco.monteiro@unesp.br', // ← E-mail para imprensa
+  lecturesEmail: 'marco.monteiro@unesp.br', // ← Para convites de palestras
 }
 
 export const videoConfig = {
-  // Substitua com o ID do vídeo do YouTube
-  // Exemplo: se URL for https://youtube.com/watch?v=ABC123, coloque 'ABC123'
-  youtubeId: '',         // ← ID do YouTube
-  youtubeUrl: '',        // ← URL completa do YouTube
+  // Playlist do YouTube "NA FEG POD"
+  playlistId: 'PLsBgJPZvzB9CXbtb4BjbQzyMbqSEZKw8g',
+  playlistUrl:
+    'https://www.youtube.com/playlist?list=PLsBgJPZvzB9CXbtb4BjbQzyMbqSEZKw8g',
+  // Substitua com o ID de um vídeo específico para destaque (opcional)
+  youtubeId: '',
+  youtubeUrl: '',
 }
