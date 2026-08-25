@@ -6,7 +6,7 @@
 export const siteConfig = {
   siteName: 'Marco Aurélio Alvarenga Monteiro',
   siteTagline: 'Nos Labirintos do Eu',
-  siteUrl: 'https://noslabirintosdoeu.com.br', // ← Atualize com o domínio real
+  siteUrl: 'https://nos-labirintos-do-eu.vercel.app', // ← Troque pelo domínio próprio quando registrar
   siteDescription:
     'Plataforma do Prof. Marco Aurélio Alvarenga Monteiro — pesquisador da UNESP e autor de "Nos Labirintos do Eu". Ciência, educação, neurociência das emoções e a travessia do autoconhecimento.',
   ogImage: '/og-image.jpg',

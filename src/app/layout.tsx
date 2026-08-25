@@ -41,6 +41,12 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.siteName,
+    description: siteConfig.siteDescription,
+    images: [siteConfig.ogImage],
+  },
   alternates: {
     canonical: siteConfig.siteUrl,
   },
